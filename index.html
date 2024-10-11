@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>City Tourist Guide</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <h1>City Tourist Guide</h1>
+    <input type="text" id="city" placeholder="Enter city name (e.g., New York)">
+    <button id="show-map-btn">Show Map</button>
+
+    <div id="city-info">
+        <h3>Significance of City</h3> <!-- Changed header -->
+        <div id="city-history"></div>
+        <h3>Famous Places</h3>
+        <ul id="places-list"></ul>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
