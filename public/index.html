@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Guide App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        #map { height: 400px; }
+    </style>
+</head>
+<body>
+    <h1>Tourist Guide App</h1>
+    
+    <label for="city">Select a city:</label>
+    <select id="city">
+        <option value="">Select a city</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="New York">New York</option>
+        <option value="Paris">Paris</option>
+        <option value="London">London</option>
+        <option value="Rome">Rome</option>
+        <option value="Sydney">Sydney</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Beijing">Beijing</option>
+    </select>
+    
+    <button id="show-map-btn">Show Map</button>
+
+    <h2>City History:</h2>
+    <p id="city-history"></p>
+
+    <h2>Places to Visit:</h2>
+    <ul id="places-list"></ul>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

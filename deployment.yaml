@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+   name: touristguideapp
+spec: 
+  replicas: 2
+  selector:
+    matchLabels:
+      name: touristguideapp
+  template:
+    metadata:
+      labels:
+        name: touristguideapp
+    spec:
+      containers:
+      - name: touristguideapp1
+        image: touristguideapp:latest
+        ports:
+        - containerPort: 5000 
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: touristguideapp-service
+spec:
+  selector:
+    name: touristguideapp
+  ports:
+    - protocol: TCP
+      port: 80           # Port that the service will expose
+      targetPort: 5000   # Port that your Flask app is running on
+  type: LoadBalancer      # Use ClusterIP or NodePort based on your requirements
