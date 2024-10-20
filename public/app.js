@@ -7,7 +7,7 @@ document.getElementById('show-map-btn').addEventListener('click', function() {
         },
         'New York': {
             history: 'New York, known as the Big Apple, is famous for its skyline and cultural diversity.',
-            places: ['Statue of Liberty', 'Central Park', 'Times Square']
+            places: ['Statue of Liberty', 'Central Park', 'Times Squares']
         },
         'Paris': {
             history: 'Paris, known as the City of Light, is famous for its art, fashion, and culture.',
