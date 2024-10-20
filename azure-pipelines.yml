@@ -47,6 +47,6 @@ stages:
         azureSubscription: 'armcon'
         appName: 'touristapp13'
         containers: |
-          $(containerRegistry)/$(imageName):$(Build.BuildId)
+          $(containerRegistry)/$(imageRepository):$(Build.BuildId)
 
  
